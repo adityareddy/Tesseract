@@ -1,0 +1,15 @@
+rootProject.name = 'Tesseract'
+
+include ':app'
+include ':react-native-android-statusbar'
+include ':react-native-vector-icons'
+include ':RNMaterialKit'
+include ':ExtraDimensions'
+include ':react-native-dialogs'
+include ':react-native-eval'
+project(':react-native-eval').projectDir = new File(settingsDir, '../node_modules/react-native-eval-updated/android')
+project(':react-native-dialogs').projectDir = file('../node_modules/react-native-dialogs/android')
+project(':ExtraDimensions').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-extra-dimensions-android/android')
+project(':react-native-android-statusbar').projectDir = new File(settingsDir, '../node_modules/react-native-android-statusbar')
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+project(':RNMaterialKit').projectDir = file('../node_modules/react-native-material-kit/android')
